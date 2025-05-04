@@ -25,7 +25,7 @@ In a real-world microservices setup, every client API request may succeed or fai
 ---
 
 ## 🗂️ Project Structure
-
+```text
 predictive-request-analytics-mapreduce/
 ├── mapper1.py # Parses raw logs into structured request and prediction records
 ├── reducer1.py # Matches predictions with actual results, simulates server logic
@@ -35,7 +35,7 @@ predictive-request-analytics-mapreduce/
 ├── reducer3.py # Aggregates final per-client analytics
 ├── small_data.txt # Sample dataset (Requests + Predictions)
 ├── README.md # You're reading it
-
+```
 
 ---
 
@@ -105,16 +105,16 @@ Make sure all scripts are executable:
 ```
 chmod +x mapper*.py reducer*.py
 ```
+---
 
 ## ✅ Final Output Format
-
-<client_id> <correct_predictions>/<total_requests> <accumulated_cost>
 
 Example:
 ```
 c01 2/3 400
 c02 1/2 100
 ```
+---
 
 ## 🧰 Tech Stack
 
@@ -123,7 +123,10 @@ c02 1/2 100
 - Shell CLI for orchestration
 - Unix-based OS (preferred for Hadoop compatibility)
 
+---
+
 # 🧑‍💻 Author
 
-Abdur Rehman, Bachelors in Data Science
+**Abdur Rehman**  
+_Bachelor's in Data Science_  
 Passionate about simple but scalable code for big data pipelines.
